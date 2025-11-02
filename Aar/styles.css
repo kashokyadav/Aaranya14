@@ -1,0 +1,202 @@
+:root {
+  --primary: #4db6ac;
+  --secondary: #81c784;
+  --bg: #ffffff;
+  --text: #333;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg);
+  margin: 0;
+  color: var(--text);
+}
+
+header {
+  background: var(--primary);
+  color: white;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 60px;
+  border-radius: 50%;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 500;
+}
+
+.hero {
+  text-align: center;
+  padding: 60px;
+  background: linear-gradient(to right, #b2dfdb, #c8e6c9);
+}
+
+.hero h1 {
+  font-size: 2.2rem;
+}
+
+.btn {
+  background: var(--secondary);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.products, .about, .contact {
+  padding: 30px;
+  text-align: center;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.product {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 15px;
+  width: 240px;
+  background: #f9f9f9;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.product img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.contact-section {
+  text-align: center;
+  padding: 120px 20px;
+  background-image: url('logo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;       /* makes image fill full screen */
+  background-attachment: fixed; /* smooth scrolling effect */
+  background-color: #f0fff0;    /* fallback color */
+  min-height: 100vh;
+  color: #fff;                  /* white text for visibility */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+button {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 12px;
+  background: #eeeeee;
+  margin-top: 40px;
+}
+
+@media(max-width: 700px) {
+  .product-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+
+/* General Header & Navigation */
+header {
+  text-align: center;
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.logo {
+  width: 120px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover, nav a.active {
+  color: #006400;
+}
+
+/* ✅ Contact Section */
+.contact-section {
+  background-image: url('logo.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+/* ✅ Adds a soft transparent overlay for better readability */
+.contact-section .overlay {
+  background: rgba(0, 0, 0, 0.55);
+  padding: 80px 30px;
+  border-radius: 20px;
+  max-width: 700px;
+  margin: 20px;
+}
+
+/* ✅ Contact Text */
+.contact-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.contact-section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #f0f0f0;
+}
+
+.contact-info a {
+  color: #00ffcc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* ✅ Footer */
+footer {
+  text-align: center;
+  background-color: #f8f8f8;
+  padding: 15px;
+  color: #555;
+  font-size: 0.9rem;
+}

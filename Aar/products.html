@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Products | Aaranya Naturals</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js" defer></script>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Aaranya Naturals Logo" class="logo">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="products.html">Products</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="products">
+    <h1>Our Products</h1>
+    <p class="intro">Explore our natural dairy and organic vermicompost products, made with care for your health and the planet.</p>
+
+    <h2>Milk & Dairy Products</h2>
+    <div class="product-grid">
+      <div class="product">
+        <img src="milk.jpg" alt="Milk">
+        <h3>Milk</h3>
+        <p>Pure buffalo milk — fresh, thick, and nutrient-rich.</p>
+        <select id="milk-size">
+          <option>½ litre</option>
+          <option>1 litre</option>
+          <option>5 litre</option>
+        </select>
+        <input type="number" id="milk-qty" min="1" value="1">
+        <button onclick="orderOnWhatsApp('Milk', 'milk-size', 'milk-qty')">Order on WhatsApp</button>
+      </div>
+
+      <div class="product">
+        <img src="ghee.jpg" alt="Ghee">
+        <h3>Ghee</h3>
+        <p>Traditional hand-churned ghee — rich in aroma and taste.</p>
+        <select id="ghee-size">
+          <option>½ litre</option>
+          <option>1 litre</option>
+        </select>
+        <input type="number" id="ghee-qty" min="1" value="1">
+        <button onclick="orderOnWhatsApp('Ghee', 'ghee-size', 'ghee-qty')">Order on WhatsApp</button>
+      </div>
+
+      <div class="product">
+        <img src="paneer.jpg" alt="Paneer">
+        <h3>Paneer</h3>
+        <p>Soft and fresh paneer made from pure buffalo milk.</p>
+        <select id="paneer-size">
+          <option>250 g</option>
+          <option>500 g</option>
+          <option>1 kg</option>
+        </select>
+        <input type="number" id="paneer-qty" min="1" value="1">
+        <button onclick="orderOnWhatsApp('Paneer', 'paneer-size', 'paneer-qty')">Order on WhatsApp</button>
+      </div>
+
+      <div class="product">
+        <img src="kova.jpg" alt="Kova">
+        <h3>Kova</h3>
+        <p>Traditional thick milk base — perfect for sweets.</p>
+        <select id="kova-size">
+          <option>250 g</option>
+          <option>500 g</option>
+          <option>1 kg</option>
+        </select>
+        <input type="number" id="kova-qty" min="1" value="1">
+        <button onclick="orderOnWhatsApp('Kova', 'kova-size', 'kova-qty')">Order on WhatsApp</button>
+      </div>
+
+      <div class="product">
+        <img src="curd.jpg" alt="Curd">
+        <h3>Curd</h3>
+        <p>Thick and creamy curd — made from pure milk.</p>
+        <select id="curd-size">
+          <option>250 g</option>
+          <option>500 g</option>
+          <option>1 kg</option>
+        </select>
+        <input type="number" id="curd-qty" min="1" value="1">
+        <button onclick="orderOnWhatsApp('Curd', 'curd-size', 'curd-qty')">Order on WhatsApp</button>
+      </div>
+    </div>
+
+    <h2>Vermicompost Products</h2>
+    <div class="product-grid">
+      <div class="product">
+        <img src="vermi.jpg" alt="Vermicompost">
+        <h3>Vermicompost</h3>
+        <p>Rich organic compost that enhances soil fertility.</p>
+        <select id="vermi-size">
+          <option>1 kg</option>
+          <option>5 kg</option>
+          <option>10 kg</option>
+        </select>
+        <input type="number" id="vermi-qty" min="1" value="1">
+        <button onclick="orderOnWhatsApp('Vermicompost', 'vermi-size', 'vermi-qty')">Order on WhatsApp</button>
+      </div>
+
+      <div class="product">
+        <img src="vermi2.jpg" alt="Cultural Vermicompost">
+        <h3>Cultural Vermicompost</h3>
+        <p>Enhanced microbial compost for healthy plant growth.</p>
+        <select id="cvermi-size">
+          <option>1 kg</option>
+          <option>5 kg</option>
+          <option>10 kg</option>
+        </select>
+        <input type="number" id="cvermi-qty" min="1" value="1">
+        <button onclick="orderOnWhatsApp('Cultural Vermicompost', 'cvermi-size', 'cvermi-qty')">Order on WhatsApp</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Aaranya Naturals | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
